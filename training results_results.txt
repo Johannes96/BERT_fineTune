@@ -1,0 +1,55 @@
+Training lokal auf Laptop mit CPU:
+batch-size = 16
+epochs = 2
+learning-rate = 2e-5
+
+Ergebnisse:
+
+======== Epoch 1 / 2 ========
+Training...
+  Batch    40  of    481.    Elapsed: 0:05:41.
+  Batch    80  of    481.    Elapsed: 0:11:20.
+  Batch   120  of    481.    Elapsed: 0:16:57.
+  Batch   160  of    481.    Elapsed: 0:22:33.
+  Batch   200  of    481.    Elapsed: 0:28:08.
+  Batch   240  of    481.    Elapsed: 0:33:47.
+  Batch   280  of    481.    Elapsed: 0:39:23.
+  Batch   320  of    481.    Elapsed: 0:45:01.
+  Batch   360  of    481.    Elapsed: 0:50:36.
+  Batch   400  of    481.    Elapsed: 0:56:19.
+  Batch   440  of    481.    Elapsed: 1:01:47.
+  Batch   480  of    481.    Elapsed: 1:07:04.
+
+  Average training loss: 0.48
+  Training epcoh took: 1:07:12
+
+Running Validation...
+  Accuracy: 0.81
+  Validation Loss: 0.41
+  Validation took: 0:02:13
+
+======== Epoch 2 / 2 ========
+Training...
+  Batch    40  of    481.    Elapsed: 0:05:17.
+  Batch    80  of    481.    Elapsed: 0:10:36.
+  Batch   120  of    481.    Elapsed: 0:15:53.
+  Batch   160  of    481.    Elapsed: 0:21:14.
+  Batch   200  of    481.    Elapsed: 0:26:34.
+  Batch   240  of    481.    Elapsed: 0:31:52.
+  Batch   280  of    481.    Elapsed: 0:37:11.
+  Batch   320  of    481.    Elapsed: 0:42:30.
+  Batch   360  of    481.    Elapsed: 0:47:49.
+  Batch   400  of    481.    Elapsed: 0:53:09.
+  Batch   440  of    481.    Elapsed: 0:58:57.
+  Batch   480  of    481.    Elapsed: 1:04:39.
+
+  Average training loss: 0.27
+  Training epcoh took: 1:04:47
+
+Running Validation...
+  Accuracy: 0.84
+  Validation Loss: 0.45
+  Validation took: 0:02:20
+
+Training complete!
+Total training took 2:16:31 (h:mm:ss)
