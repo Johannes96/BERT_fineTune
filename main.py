@@ -1,5 +1,5 @@
 #%% BERT fine-tuning (https://mccormickml.com/2019/07/22/BERT-fine-tuning/)
-# funktioniert Github?
+# funktioniert Github ?
 import wget
 import os
 import zipfile
