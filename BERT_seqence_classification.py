@@ -77,7 +77,7 @@ trainer = Trainer(
     train_dataset=train_dataset,         # training dataset
     eval_dataset=val_dataset             # evaluation dataset
 )
-
+# %%
 trainer.train()
 
 # %% Training mit PyTorch
@@ -114,3 +114,17 @@ print(x)
 
 # bei lokaler ausführung dauert es sehr lange --> passiert etwas?
 # to-do: führe in colab aus
+
+# %%
+import time
+print(time.time())
+
+for epoch in range(3):
+    t1 = time.time()
+    print('Epoch', epoch)
+    # Rechne...
+    for batch in range(10):
+        time.sleep(3)
+        t2 = time.time()
+        t_delta = round(t2 - t1)
+        print('batch', batch, 'finished in',t_delta,'seconds')
