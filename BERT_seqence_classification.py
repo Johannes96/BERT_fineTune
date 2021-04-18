@@ -4,7 +4,7 @@
 import wget
 url = 'http://ai.stanford.edu/~amaas/data/sentiment/aclImdb_v1.tar.gz'
 dataset1 = wget.download(url)
-
+# Daten müssen noch entpackt werden
 # %% Erstelle Trainings- und Testdaten
 from pathlib import Path
 
@@ -15,13 +15,12 @@ def read_imdb_split(split_dir):
     for label_dir in ["pos", "neg"]:
         for text_file in (split_dir/label_dir).iterdir():
             texts.append(text_file.read_text())
-            labels.append(0 if label_dir == "neg" else 1) # replaced 'is' with '==' because of error-message
+            labels.append(0 if label_dir is "neg" else 1) # replaced 'is' with '==' because of warning
 
     return texts, labels
-
+# to-do: Warum werden alle labels als "1" klassifiziert?
 train_texts, train_labels = read_imdb_split('aclImdb/train')
 test_texts, test_labels = read_imdb_split('aclImdb/test')
-
 # %% Erstelle Validationsdaten
 from sklearn.model_selection import train_test_split
 train_texts, val_texts, train_labels, val_labels = train_test_split(train_texts, train_labels, test_size=.2)
