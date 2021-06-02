@@ -47,8 +47,8 @@ plt.title('Performace beim Fine-Tuning der Aspekt Sentiment Klassifikation')
 plt.xticks(index, labels) # bei zwei Balken: index + bar_width
 
 plt.tight_layout()
-# plt.show()
-plt.savefig('/home/johannes/Dropbox/Praktisches Seminar/Darstellungen/ft_performance_asc_mse_v1.png', dpi=300)
+plt.show()
+# plt.savefig('/home/johannes/Dropbox/Praktisches Seminar/Darstellungen/ft_performance_asc_mse_v1.png', dpi=300)
 # %% accuracy und f1-score ae
 
 # %% mse ae

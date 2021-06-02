@@ -23,7 +23,7 @@ plt.xlim(x_max, 4) # erst max weil weniger Zeit besser ist
 for i, label in enumerate(labels2):
     plt.annotate(label, (time_asc[i], acc_asc[i]))
 
-# plt.show()
-plt.savefig('/home/johannes/Dropbox/Praktisches Seminar/Darstellungen/finetuning_effizienz_asc.png', dpi=300)
+plt.show()
+# plt.savefig('/home/johannes/Dropbox/Praktisches Seminar/Darstellungen/finetuning_effizienz_asc.png', dpi=300)
 
 # %% scatter ae
