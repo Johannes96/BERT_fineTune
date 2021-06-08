@@ -2,7 +2,7 @@
 import matplotlib.pyplot as plt
 import pandas as pd
 # %% scatter asc
-url = 'https://raw.githubusercontent.com/Johannes96/BERT_fineTune/master/data/finetuning_data.csv'
+url = 'https://raw.githubusercontent.com/Johannes96/BERT_fineTune/master/data/finetuning_data_asc.csv'
 data_finetune = pd.read_csv(url, sep=';')
 
 labels2 = data_finetune['Modell']
