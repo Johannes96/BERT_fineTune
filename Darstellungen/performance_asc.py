@@ -7,7 +7,7 @@ url = 'https://raw.githubusercontent.com/Johannes96/BERT_fineTune/master/data/fi
 data_finetune = pd.read_csv(url, sep=';')
 
 acc = data_finetune['accuracy'].tolist()
-f1 = data_finetune['f1-score'].tolist() # erstetze mit f1-micro
+f1 = data_finetune['f1-score'].tolist()
 mse = data_finetune['mse'].tolist()
 labels = data_finetune['Modell'].tolist()
 # %% accuracy und f1-score asc
@@ -26,7 +26,7 @@ rects2 = plt.bar(index + bar_width, f1, bar_width, color='#8aab33', label='F1-Sc
 # plt.xlabel('Sprachmodell')
 plt.ylabel('Performance')
 plt.title('Performace beim Fine-Tuning der Aspekt Sentiment Klassifikation')
-plt.xticks(index + bar_width, labels)
+plt.xticks(index + bar_width * 0.5, labels)
 plt.legend(loc='upper right')
 
 plt.tight_layout()
@@ -44,7 +44,7 @@ rects1 = plt.bar(index, mse, bar_width, color='#8aab33', label='mse')
 # plt.xlabel('Sprachmodell')
 plt.ylabel('Mean Squared Error')
 plt.title('Performace beim Fine-Tuning der Aspekt Sentiment Klassifikation')
-plt.xticks(index, labels) # bei zwei Balken: index + bar_width
+plt.xticks(index, labels) # bei zwei Balken: index + bar_width * 0.5
 
 plt.tight_layout()
 plt.show()
