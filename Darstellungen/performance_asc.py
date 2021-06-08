@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 import pandas as pd
 import numpy as np
 # %% data
-url = 'https://raw.githubusercontent.com/Johannes96/BERT_fineTune/master/data/finetuning_data.csv'
+url = 'https://raw.githubusercontent.com/Johannes96/BERT_fineTune/master/data/finetuning_data_asc.csv'
 data_finetune = pd.read_csv(url, sep=';')
 
 acc = data_finetune['accuracy'].tolist()
@@ -27,11 +27,11 @@ rects2 = plt.bar(index + bar_width, f1, bar_width, color='#8aab33', label='F1-Sc
 plt.ylabel('Performance')
 plt.title('Performace beim Fine-Tuning der Aspekt Sentiment Klassifikation')
 plt.xticks(index + bar_width, labels)
-plt.legend()
+plt.legend(loc='upper right')
 
 plt.tight_layout()
-plt.show()
-# plt.savefig('/home/johannes/Dropbox/Praktisches Seminar/Darstellungen/ft_performance_asc_v1.png', dpi=300)
+# plt.show()
+plt.savefig('/home/johannes/Dropbox/Praktisches Seminar/Darstellungen/ft_performance_asc_v1.png', dpi=300)
 
 # %% mse asc
 n_groups = 6

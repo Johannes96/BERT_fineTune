@@ -1,5 +1,5 @@
 Modell;accuracy;f1-score;avg precision;avg recall;mse;trainingloss;evaluationloss;trainingtime in s;evaluationtime in s;parameters
-BERT;0.542;0.542;;;1.379;1.204;1.148;536;12.06;110000000
+BERT;0.542;0.570;;;1.379;1.204;1.148;536;12.06;110000000
 ALBERT;0.530;0.530;;;1.449;1.253;1.144;552;17.60;12000000
 DistillBERT;0.520;0.435;;;1.357;1.150;1.116;295;13.30;66000000
 ELECTRA;0.540;0.480;;;1.377;1.226;1.113;559;11.1059;110000000
