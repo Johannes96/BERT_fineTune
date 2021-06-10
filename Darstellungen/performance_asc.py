@@ -30,8 +30,8 @@ plt.xticks(index + bar_width * 0.5, labels)
 plt.legend(loc='upper right')
 
 plt.tight_layout()
-# plt.show()
-plt.savefig('/home/johannes/Dropbox/Praktisches Seminar/Darstellungen/ft_performance_asc_v1.png', dpi=300)
+plt.show()
+# plt.savefig('/home/johannes/Dropbox/Praktisches Seminar/Darstellungen/ft_performance_asc_v1.png', dpi=300)
 
 # %% mse asc
 n_groups = 6

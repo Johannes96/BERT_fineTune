@@ -56,5 +56,5 @@ for i in range(len(r3)):
 # Adjust the margins
 plt.subplots_adjust(bottom=0.2, top=0.95)
 
-# plt.show()
+plt.show()
 plt.savefig('/home/johannes/Dropbox/Praktisches Seminar/Darstellungen/ft_datasetsize_variation_v1.png', dpi=300)
