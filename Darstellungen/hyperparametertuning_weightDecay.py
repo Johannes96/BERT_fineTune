@@ -2,11 +2,10 @@
 import matplotlib.pyplot as plt
 import pandas as pd
 # %% linegraph hyperparametertuning - Epochs (mit zwei y-Achsen)
-x = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-y_eff = [1, 0.5191074356, 0.3223776789, 0.2088268125, 0.1447251207, 0.09251209684, 0.05662804618, 0.03243850918, 0.01853784435, 0] # efficiency (accuracy/trainingtime)
-y_acc = [0.443, 0.529, 0.560, 0.567, 0.576, 0.571, 0.563, 0.563, 0.566, 0.559]
-y_mse = [1, 0.3063763608, 0.09797822706, 0, 0.01244167963, 0.1461897356, 0.2052877138, 0.03110419907, 0.231726283, 0.1726283048]
-y_time = [176, 363, 547, 733, 911, 1104, 1285, 1463, 1598, 1784]
+x = [0.00, 0.01, 0.02, 0.03, 0.04, 0.05, 0.1, 0.2, 0.3]
+y_acc = [0.553, 0.549, 0.554, 0.549, 0.548, 0.544, 0.553, 0.549, 0.551]
+y_mse = [1.215, 1.195, 1.228, 1.232, 1.265, 1.264, 1.240, 1.238, 1.225]
+y_time = [529, 532, 533, 533, 532, 534, 533, 534, 536]
 
 y_time_m = []
 for i in y_time:
@@ -16,8 +15,8 @@ for i in y_time:
 fig, ax1 = plt.subplots()
 
 color = '#8aab33'
-ax1.set_xlabel('Epochs')
-ax1.set_ylabel(ylabel='', color=color)
+ax1.set_xlabel('weight-decay')
+ax1.set_ylabel(ylabel='Performance', color=color)
 ax1.plot(x, y_acc, color=color, label='Accuracy')
 ax1.plot(x, y_mse, color=color, linestyle='--', label='MSE')
 # plt.plot(x, y_eff, color=color, linestyle=':', label='Efficiency')
@@ -33,4 +32,4 @@ ax2.tick_params(axis='y', labelcolor=color)
 fig.tight_layout()  # otherwise the right y-label is slightly clipped
 
 plt.show()
-# plt.savefig('/home/johannes/Dropbox/Praktisches Seminar/Darstellungen/hyperparametertuning_epochs.png', dpi=300)
+# plt.savefig('/home/johannes/Dropbox/Praktisches Seminar/Darstellungen/hyperparametertuning_weightDecay.png', dpi=300)

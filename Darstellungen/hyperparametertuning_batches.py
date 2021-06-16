@@ -2,11 +2,10 @@
 import matplotlib.pyplot as plt
 import pandas as pd
 # %% linegraph hyperparametertuning - Epochs (mit zwei y-Achsen)
-x = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-y_eff = [1, 0.5191074356, 0.3223776789, 0.2088268125, 0.1447251207, 0.09251209684, 0.05662804618, 0.03243850918, 0.01853784435, 0] # efficiency (accuracy/trainingtime)
-y_acc = [0.443, 0.529, 0.560, 0.567, 0.576, 0.571, 0.563, 0.563, 0.566, 0.559]
-y_mse = [1, 0.3063763608, 0.09797822706, 0, 0.01244167963, 0.1461897356, 0.2052877138, 0.03110419907, 0.231726283, 0.1726283048]
-y_time = [176, 363, 547, 733, 911, 1104, 1285, 1463, 1598, 1784]
+x = ['16', '32', '64', '128']
+y_acc = [0.549, 0.530, 0.503, 0.463]
+y_mse = [1.195, 1.410, 1.467, 1.713]
+y_time = [532, 451, 407, 387]
 
 y_time_m = []
 for i in y_time:
@@ -16,8 +15,8 @@ for i in y_time:
 fig, ax1 = plt.subplots()
 
 color = '#8aab33'
-ax1.set_xlabel('Epochs')
-ax1.set_ylabel(ylabel='', color=color)
+ax1.set_xlabel('batch-size')
+ax1.set_ylabel(ylabel='Performance', color=color)
 ax1.plot(x, y_acc, color=color, label='Accuracy')
 ax1.plot(x, y_mse, color=color, linestyle='--', label='MSE')
 # plt.plot(x, y_eff, color=color, linestyle=':', label='Efficiency')
@@ -33,4 +32,4 @@ ax2.tick_params(axis='y', labelcolor=color)
 fig.tight_layout()  # otherwise the right y-label is slightly clipped
 
 plt.show()
-# plt.savefig('/home/johannes/Dropbox/Praktisches Seminar/Darstellungen/hyperparametertuning_epochs.png', dpi=300)
+# plt.savefig('/home/johannes/Dropbox/Praktisches Seminar/Darstellungen/hyperparametertuning_batches.png', dpi=300)
