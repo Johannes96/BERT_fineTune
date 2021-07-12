@@ -1,7 +1,7 @@
-Modell;accuracy;f1-score;avg precision;avg recall;mse;trainingloss;evaluationloss;trainingtime in s;evaluationtime in s;parameters
-BERT;0.542;0.570;;;1.379;1.204;1.148;536;12.06;110000000
-ALBERT;0.530;0.530;;;1.449;1.253;1.144;552;17.60;12000000
-DistillBERT;0.520;0.435;;;1.357;1.150;1.116;295;13.30;66000000
-ELECTRA;0.540;0.480;;;1.377;1.226;1.113;559;11.1059;110000000
-Roberta;0.538;0.510;;;1.354;1.246;1.114;546;9.96;355000000
-Deberta;0.554;0.530;;;1.375;1.127;1.123;653;12.71;134000000
+Modell;accuracy;f1-score;avg precision;avg recall;mse;trainingloss;evaluationloss;trainingtime in s;evaluationtime in s;parameters;cost
+BERT;0.542;0.570;;;1.379;1.204;1.148;536;12.06;110000000;0.052
+ALBERT;0.530;0.530;;;1.449;1.253;1.144;552;17.60;12000000;0.054
+DistillBERT;0.520;0.435;;;1.357;1.150;1.116;295;13.30;66000000;0.021
+ELECTRA;0.540;0.480;;;1.377;1.226;1.113;559;11.1059;110000000;0.052
+Roberta;0.538;0.510;;;1.354;1.246;1.114;546;9.96;355000000;0.053
+Deberta;0.554;0.530;;;1.375;1.127;1.123;653;12.71;134000000;0.063
