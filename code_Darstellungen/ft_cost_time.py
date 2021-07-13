@@ -28,8 +28,8 @@ ax.set_xlim(-0.5)  # create space between left y-axis and first bar
 fig.tight_layout()
 fig.legend(loc='upper left')
 
-# plt.show()
-plt.savefig('/home/johannes/Dropbox/Praktisches Seminar/Darstellungen/ft_time_cost_asc.png', dpi=300)
+plt.show()
+# plt.savefig('/home/johannes/Dropbox/Praktisches Seminar/Darstellungen/ft_time_cost_asc.png', dpi=300)
 
 # %% cost and time ae
 
@@ -72,5 +72,5 @@ ax.set_xlim(-0.5)
 fig.tight_layout()
 fig.legend(loc='upper left')
 
-# plt.show()
-plt.savefig('/home/johannes/Dropbox/Praktisches Seminar/Darstellungen/ft_time_cost_ae.png', dpi=300)
+plt.show()
+# plt.savefig('/home/johannes/Dropbox/Praktisches Seminar/Darstellungen/ft_time_cost_ae.png', dpi=300)
